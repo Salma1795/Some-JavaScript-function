@@ -1,0 +1,156 @@
+<html>
+
+<head>
+    <title>Second Exam</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Bookmark section-->
+    <section>
+        <div class="container w-100">
+            <h1 class="font-weight-bolder py-2">Bookmarker</h1>
+            <form>
+                <div class="overlay container text-center w-75 bg-light m-auto py-5">
+                    <h2 class="py-3">Bookmark your favorite items</h2>
+                    <div class="form-group">
+                        <input class="form-control w-50 mx-auto" type="text" placeholder="New item"
+                            id="bookmarkNameInput">
+                    </div>
+
+                    <button id="AddBtn" class="btn btn-primary">Add</button>
+                </div>
+            </form>
+            <table class="table mt-3 bg-light w-75 mx-auto">
+
+                <tbody class="text-center font-weight-bolder" id="table-body">
+
+                </tbody>
+
+            </table>
+    </section>
+    <!--Colory section-->
+    <section class="py-5 vh-100 w-100 d-flex align-items-center justify-content-center" id="colorySection">
+        <h1 class="musicText text-center text-danger container font-weight-bolder text-uppercase">hustling</h1>
+
+        <audio id="music">
+            <source src="Baby-Hard-Laughing-www.fesliyanstudios.com.mp3">
+        </audio>
+
+    </section>
+    <!-- Time Section-->
+    <section id="time" class=" py-5 text-center text-white">
+
+        <h1 class=" text-center py-4">We are coming soon.</h1>
+        <div class="count container ">
+            <div class="row">
+                <div class="col-md-3 days">
+                    <span id="days"></span>
+                    <h2>Days</h2>
+                </div>
+
+                <div class="col-md-3 hours">
+                    <span id="hours"></span>
+                    <h2>Hours</h2>
+                </div>
+
+                <div class="col-md-3 minutes">
+                    <span id="minutes"></span>
+                    <h2>Minutes</h2>
+                </div>
+
+                <div class="col-md-3 seconds">
+                    <span id="seconds"></span>
+                    <h2>Seconds</h2>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!--RGB Section-->
+
+    <section class="py-5" id="RGBSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <svg id="colorR" height="500px" width="300px">
+                        <polyline id="R-fill" points="100,500 100,200 100,0 300,0 300,200 100,200 300,500"
+                            style="fill:none;stroke:red;stroke-width:70" />
+                    </svg>
+
+                </div>
+                <div class="col-md-4">
+                    <svg id="GChar" height="500px" width="400px">
+                        <polyline points="300,0 100,0 100,500 300,500 300,200 150,200 "
+                            style="fill:none;stroke:green;stroke-width:70" />
+                    </svg>
+                </div>
+
+                <div class="col-md-4">
+                    <svg id="BChar" height="500px" width="400px">
+                        <polyline points="100,0 300,0 300,150 100,250 100,0 "
+                            style="fill:none;stroke:blue;stroke-width:70" />
+
+                        <polyline points="100,250 100,500 300,500 300,350 100,250"
+                            style="fill:none;stroke:blue;stroke-width:70" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Validation section -->
+
+    <section class="bg-info py-5">
+        <h1 class="font-weight-bolder text-center" style="font-size:4rem">Validation Form</h1>
+        <div class="container w-100">
+            <form>
+                <div class="form-group w-75 mx-auto">
+                    <label>User Name: </label>
+                    <input class="form-control" type="text" placeholder="Enter user name" id="nameInput">
+                    <!--alert div-->
+                    <div class="alert alert-danger text-danger is-invalid d-none" id="nameInputAlert">
+                        <p>Entre a valid username</p>
+                    </div>
+                </div>
+                <div class="form-group w-75 mx-auto">
+                    <label>Email Address: </label>
+                    <input class="form-control" type="email" placeholder="Enter email" id="emailInput">
+                    <!--alert div-->
+                    <div class="alert alert-danger text-danger is-invalid d-none" id="emailInputAlert">
+                        <p>Entre a valid email</p>
+                    </div>
+                </div>
+                <div class="form-group w-75 mx-auto">
+                    <label>Phone: </label>
+                    <input class="form-control" type="number" placeholder="Enter phone" id="phoneInput">
+                    <!--alert div-->
+                    <div class="alert alert-danger text-danger is-invalid d-none" id="phoneInputAlert">
+                        <p>Entre a valid phone</p>
+                    </div>
+                </div>
+                <div class="form-group w-75 mx-auto">
+                    <label>Massege: </label>
+                    <textarea class="form-control" type="text" placeholder="Enter your massege" id="massegeInput">
+                        </textarea>
+                    <button class="btn btn-primary mt-3 mx-auto">Submit</button>
+                </div>
+
+
+            </form>
+        </div>
+    </section>
+
+
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="first.js"></script>
+</body>
+
+</html>

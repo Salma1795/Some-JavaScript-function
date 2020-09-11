@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+.overlay{
+    height: 50vh;
+}
+
+.musicText{
+    font-size: 5rem;
+}
+/* counters */
+#time{
+    background-color: rgb(72, 177, 72);
+}
+#time h1{
+    font-size: 3rem;
+    font-weight: 500;
+    font-style: italic;
+}
+.count{ 
+    width: 80%;
+}
+
+.days , .hours, .minutes ,.seconds{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    border: solid white 0.25rem;
+    border-radius: 50%;
+    padding-top: 2rem ;
+    padding-bottom:2rem ;
+}
+/*RGB section */
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+svg 
